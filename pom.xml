@@ -10,7 +10,7 @@
 
     <name>Java Send SMS lib</name>
     <description>Send SMS API library by Adeona Technologies</description>
-    <url>https://github.com/Vishwa-1995/Java-SMS-API-lib</url>
+    <url>https://github.com/adeonatech/Java-SMS-API-lib</url>
 
     <licenses>
         <license>
@@ -81,17 +81,17 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git://github.com/Vishwa-1995/Java-SMS-API-lib.git</connection>
-        <developerConnection>scm:git:ssh://github.com/Vishwa-1995/Java-SMS-API-lib.git</developerConnection>
-        <url>https://github.com/Vishwa-1995/Java-SMS-API-lib</url>
+        <connection>scm:git:git://github.com/adeonatech/Java-SMS-API-lib.git</connection>
+        <developerConnection>scm:git:ssh://github.com/adeonatech/Java-SMS-API-lib.git</developerConnection>
+        <url>https://github.com/adeonatech/Java-SMS-API-lib</url>
     </scm>
 
     <developers>
         <developer>
             <name>Vishwa Muthukumarana</name>
-            <email>vishwa.muthukumarana@gmail.com</email>
+            <email>vishwa@adeonatech.net</email>
             <organization>Adeona Technologies</organization>
-            <organizationUrl>http://www.sonatype.com</organizationUrl>
+            <organizationUrl>https://adeonatech.net/</organizationUrl>
         </developer>
     </developers>
 
