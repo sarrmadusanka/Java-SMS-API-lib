@@ -32,10 +32,10 @@ public class Main {
         sendTextBody.setMsisdn(msisdns);
         sendTextBody.setSourceAddress("sadisha 514");
         sendTextBody.setMessage("Hi! this is test from JAVA lib");
-        sendTextBody.setTransaction_id("138");
+        sendTextBody.setTransaction_id("139");
 
         TransactionBody transactionBody = new TransactionBody();
-        transactionBody.setTransaction_id("138");
+        transactionBody.setTransaction_id("139");
 
         System.out.println(sendSMS.sendText(sendTextBody, sendSMS.getToken(tokenBody).getToken()).getStatus());
         System.out.println(sendSMS.getTransactionIDStatus(transactionBody,sendSMS.getToken(tokenBody).getToken()).getTransaction_id());
