@@ -8,7 +8,7 @@ public class UserData {
     @JsonProperty("walletBalance")
     private double walletBalance;
     @JsonProperty("additional_mask")
-    private List<Additional_mask> additional_mask;
+    private List<AdditionalMask> additional_mask;
     @JsonProperty("defaultMask")
     private String defaultMask;
     @JsonProperty("email")
@@ -32,11 +32,11 @@ public class UserData {
         this.walletBalance = walletBalance;
     }
 
-    public List<Additional_mask> getAdditional_mask() {
+    public List<AdditionalMask> getAdditional_mask() {
         return additional_mask;
     }
 
-    public void setAdditional_mask(List<Additional_mask> additional_mask) {
+    public void setAdditional_mask(List<AdditionalMask> additional_mask) {
         this.additional_mask = additional_mask;
     }
 

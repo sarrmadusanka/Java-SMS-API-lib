@@ -2,7 +2,7 @@ package dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Additional_mask {
+public class AdditionalMask {
     @JsonProperty("mask")
     private String mask;
 
