@@ -8,6 +8,10 @@ public class Msisdn {
     @JsonProperty("mobile")
     private String mobile;
 
+    public Msisdn(String mobile) {
+        this.mobile = mobile;
+    }
+
     public String getMobile() {
         return mobile;
     }

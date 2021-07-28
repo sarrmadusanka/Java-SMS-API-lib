@@ -5,6 +5,8 @@ import org.apache.http.HttpHeaders;
 import org.apache.http.message.BasicHeader;
 import service.HttpService;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SendSMSImpl implements SendSMS{
 
@@ -57,6 +59,17 @@ public class SendSMSImpl implements SendSMS{
         Header[] headers = new Header[]{contentType, authType};
 
         return objectMapper.readValue(httpService.postRequest(url, requestBody, headers), TransactionResponse.class);
+    }
+
+    public List<Msisdn> setMsisdns(String[] mobiles){
+
+        List<Msisdn> msisdns = new ArrayList<>();
+
+        for (String mobile : mobiles)
+        {
+            msisdns.add(new Msisdn(mobile));
+        }
+        return msisdns;
     }
 
 }

@@ -19,25 +19,15 @@ public class Main {
 
         SendTextBody sendTextBody = new SendTextBody();
 
-        Msisdn msisdn1 = new Msisdn();
-        msisdn1.setMobile("716843099");
-
-        Msisdn msisdn2 = new Msisdn();
-        msisdn2.setMobile("719012099");
-
-        List<Msisdn> msisdns = new ArrayList<>();
-        msisdns.add(msisdn1);
-        msisdns.add(msisdn2);
-
-        sendTextBody.setMsisdn(msisdns);
+        sendTextBody.setMsisdn(sendSMS.setMsisdns(new String[]{"716843099", "719012099"}));
         sendTextBody.setSourceAddress("sadisha 514");
         sendTextBody.setMessage("Hi! this is test from JAVA lib");
-        sendTextBody.setTransaction_id("141");
+        sendTextBody.setTransaction_id("144");
 
         TransactionBody transactionBody = new TransactionBody();
-        transactionBody.setTransaction_id("141");
+        transactionBody.setTransaction_id("144");
 
         System.out.println(sendSMS.sendText(sendTextBody, sendSMS.getToken(tokenBody).getToken()).getStatus());
-        System.out.println(sendSMS.getTransactionIDStatus(transactionBody,sendSMS.getToken(tokenBody).getToken()).getTransaction_id());
+        System.out.println(sendSMS.getTransactionIDStatus(transactionBody,sendSMS.getToken(tokenBody).getToken()).getDataTransaction().getCampaign_status());
     }
 }
