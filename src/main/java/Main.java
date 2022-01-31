@@ -12,8 +12,8 @@ public class Main {
 
         TokenBody tokenBody = new TokenBody();
 
-        tokenBody.setUsername("sadisha");
-        tokenBody.setPassword("Admin123!");
+        tokenBody.setUsername("xxxxx");
+        tokenBody.setPassword("XXXXXX");
 
         SendSMSImpl sendSMS = new SendSMSImpl();
 
